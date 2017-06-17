@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" />
+  <xs:element name="getAllConnections">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllConnectionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" minOccurs="0" name="getAllConnectionsResult" nillable="true" type="q1:ArrayOfTimetable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addConnection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startCity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endCity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addConnectionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllConnectionsFromCity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startCityName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="endCityName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="currentTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllConnectionsFromCityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" minOccurs="0" name="getAllConnectionsFromCityResult" nillable="true" type="q2:ArrayOfTimetable" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllCrossedConnectionsFromCity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startCityName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="endCityName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="currentTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllCrossedConnectionsFromCityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" minOccurs="0" name="getAllCrossedConnectionsFromCityResult" nillable="true" type="q3:ArrayOfTimetableCrossed" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

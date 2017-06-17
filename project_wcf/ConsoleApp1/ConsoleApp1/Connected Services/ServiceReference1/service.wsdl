@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_getAllConnections_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllConnections" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllConnections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllConnectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:addConnection" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllConnectionsFromCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllConnectionsFromCity" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllConnectionsFromCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllConnectionsFromCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllConnectionsFromCity_CityExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" name="detail" element="q1:CityException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllCrossedConnectionsFromCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllCrossedConnectionsFromCity" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllCrossedConnectionsFromCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllCrossedConnectionsFromCityResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="getAllConnections">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllConnections" message="tns:IService1_getAllConnections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllConnectionsResponse" message="tns:IService1_getAllConnections_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addConnection" message="tns:IService1_addConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addConnectionResponse" message="tns:IService1_addConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllConnectionsFromCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllConnectionsFromCity" message="tns:IService1_getAllConnectionsFromCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllConnectionsFromCityResponse" message="tns:IService1_getAllConnectionsFromCity_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/getAllConnectionsFromCityCityExceptionFault" name="CityExceptionFault" message="tns:IService1_getAllConnectionsFromCity_CityExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllCrossedConnectionsFromCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllCrossedConnectionsFromCity" message="tns:IService1_getAllCrossedConnectionsFromCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllCrossedConnectionsFromCityResponse" message="tns:IService1_getAllCrossedConnectionsFromCity_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getAllConnections">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllConnections" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addConnection">
+      <soap:operation soapAction="http://tempuri.org/IService1/addConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllConnectionsFromCity">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllConnectionsFromCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CityExceptionFault">
+        <soap:fault use="literal" name="CityExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllCrossedConnectionsFromCity">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllCrossedConnectionsFromCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

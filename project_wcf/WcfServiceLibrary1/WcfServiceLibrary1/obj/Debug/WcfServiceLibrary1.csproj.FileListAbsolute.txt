@@ -1,0 +1,12 @@
+c:\users\gamer\documents\visual studio 2017\Projects\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll.config
+c:\users\gamer\documents\visual studio 2017\Projects\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll
+c:\users\gamer\documents\visual studio 2017\Projects\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.pdb
+c:\users\gamer\documents\visual studio 2017\Projects\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.csprojResolveAssemblyReference.cache
+c:\users\gamer\documents\visual studio 2017\Projects\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
+c:\users\gamer\documents\visual studio 2017\Projects\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll.config
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.pdb
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb

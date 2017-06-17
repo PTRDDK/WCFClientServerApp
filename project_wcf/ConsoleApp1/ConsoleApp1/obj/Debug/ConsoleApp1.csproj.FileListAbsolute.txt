@@ -1,0 +1,6 @@
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Piotrek\Documents\Visual Studio 2017\Projects\project_wcf\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
